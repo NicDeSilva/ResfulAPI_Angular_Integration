@@ -18,4 +18,15 @@ export class HttpService {
     let tempObservable = this._http.get(`/api/tasks/${id}`);
     tempObservable.subscribe(data => console.log("Specific task:", data));
   }
+  createTask(data){
+    return this._http.post('/api/tasks', data);
+  }
+
+  deleteTask(id){
+    return this._http.delete(`/api/tasks/${id}`)
+  }
+
+  updateTask(id, data) {
+    return this._http.put(`/api/tasks/${id}`,data)
+  }
 }

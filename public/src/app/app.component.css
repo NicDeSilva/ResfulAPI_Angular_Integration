@@ -1,0 +1,11 @@
+form {
+    border: solid navy 2px;
+    width: 50%;
+}
+input{
+    display: block;
+}
+#task-list{
+    border: solid navy 2px;
+    width: 25%;
+}
