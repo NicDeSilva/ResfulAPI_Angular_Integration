@@ -20,7 +20,16 @@ export class AppComponent {
   };
 
   ngOnInit(){
+
+  }
+
+  mainButtonClick() {
     this.getTasks();
+  }
+
+  subButtonClick(id) {
+    let task = document.getElementById(id);
+    task.style.visibility = "visible"
   }
 };
 

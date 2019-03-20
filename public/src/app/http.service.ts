@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class HttpService {
 
   constructor(private _http:HttpClient) { 
-    this.getTask('5c91514a4f85da2ea015eeaf');
+    // this.getTask('5c91514a4f85da2ea015eeaf');
   }
 
   getTasks() {
